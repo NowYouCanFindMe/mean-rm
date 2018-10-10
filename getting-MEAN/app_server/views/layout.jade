@@ -1,0 +1,87 @@
+doctype html
+html
+  head
+    meta(name='viewport', content='width=device-width, initial-scale=1.0')
+    title= title
+    link(rel='stylesheet', href='/bootstrap/css/amelia.bootstrap.css')
+    link(rel='stylesheet', href='/stylesheets/style.css')
+    script(src='/javascripts/jquery-1.11.1.min.js')
+    script(src='/bootstrap/js/bootstrap.min.js')
+
+  body
+      header
+        nav.navbar.navba-default
+          .container-fluid
+            .navbar-header
+              a.navbar-brand(href='#') getting mean with MEAN
+              #bs-example-navbar-collapse-1.collapse.navbar-collapse
+                ul.nav.navbar-nav
+                  li.active
+                    a(href='/')
+                      | Home
+                      span.sr-only (current)
+                  li
+                    a(href='#') Link
+                  li.dropdown
+                    a.dropdown-toggle(href='#', data-toggle='dropdown', role='button', aria-haspopup='true', aria-expanded='false')
+                      | Projects
+                      span.caret
+                    ul.dropdown-menu
+                      li
+                        a(href='/project-1') Project 1
+                      li
+                        a(href='/project-2') Project 2
+                      li
+                        a(href='/project-3') Project 3
+                      li
+                        a(href='/project-4') Project 4
+                      li
+                        a(href='/project-5') Project 5
+                      li
+                        a(href='/project-6') Project 6
+                      li
+                        a(href='/project-7') Project 7
+                      li
+                        a(href='/project-8') Project 8
+                      li
+                        a(href='/project-9') Project 9
+                      li
+                        a(href='/project-10') Project 10
+                      li.divider(role='separator')
+                      li
+                        a(href='#') Guides
+                      li.divider(role='separator')
+                      li
+                        a(href='#') Github
+
+      .jumbotron
+        h1 Express Tutorial
+        p
+          | Welcome to MEAN tutorials
+          | This will help you get up to speed with mongo db, express, angular, and nodejs.
+        p
+          | To quickly get started you need node.js running on your computer
+          | Node comes with npm (node package manager), to help you quickly install packages
+        p
+          | First let us set up node js
+        P
+          a(href='https://nodejs.org/en/download/')
+            button() Download Link
+        p
+          | Let us install express
+        p
+          strong npm install -g express
+
+
+        p
+          a(href="/")
+            button() Go To Setup
+
+      .container
+        .main-content
+          block content
+
+      .sidebar
+        block sidebar
+  footer
+    p Running on node with Express, Jade and Stylus
