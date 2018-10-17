@@ -1,6 +1,6 @@
 # Project 2
 
-## [Live Demo](https://gettingmean-project2.netlify.com/")
+## [Live Demo](https://gettingmean-project2.netlify.com/)
 This project will help you get up and running with angular.
 
 Let us add some spazazz
